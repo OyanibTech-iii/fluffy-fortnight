@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Circuit Forem';
+  src: url('/fonts/CircuitForem.otf') format('opentype'),
+       local('Circuit Forem Regular'),
+       local('Circuit Forem');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes figurineFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-figurine-info {
+  animation: figurineFadeIn 450ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
