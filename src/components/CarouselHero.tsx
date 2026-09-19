@@ -413,7 +413,7 @@ export const CarouselHero: React.FC = () => {
 
             {/* Figurine Name */}
             <h2
-              className="font-black uppercase tracking-wide text-lg sm:text-2xl lg:text-3xl text-white mb-1.5 sm:mb-2"
+              className="font-black uppercase tracking-wide text-lg sm:text-2xl lg:text-3xl text-white mb-0 sm:mb-2"
               style={{
                 letterSpacing: '0.02em',
                 lineHeight: 1.1,
@@ -422,9 +422,9 @@ export const CarouselHero: React.FC = () => {
               {IMAGES[activeIndex].name}
             </h2>
 
-            {/* Brief Description */}
+            {/* Brief Description - Hidden on mobile */}
             <p
-              className="text-[11px] sm:text-xs lg:text-sm text-white/85 leading-relaxed"
+              className="hidden sm:block text-xs lg:text-sm text-white/85 leading-relaxed"
               style={{
                 lineHeight: 1.6,
               }}
